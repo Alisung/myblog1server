@@ -72,7 +72,7 @@ const postlistCtrl = {
   changeTextPost: async (req, res) => {
     const id = req.body.id;
     const textcommend = req.body.textcommend;
-    let sql = `update myblog1.postlist set textcommend="?" where id= ?;`;
+    let sql = `update myblog1.postlist set textcommend=? where id= ?;`;
     connection.query(sql, [textcommend, id], (error, rows) => {
       if (error) throw error;
       res.send(rows);

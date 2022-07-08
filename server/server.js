@@ -17,4 +17,4 @@ app.listen(Port, () => {
 });
 
 app.use("/api/postlist", require("./routes/postlistRouter"));
-app.use("/api/commnedlist", require("./routes/postlistRouter"));
+// app.use("/api/commnedlist", require("./routes/postlistRouter"));
